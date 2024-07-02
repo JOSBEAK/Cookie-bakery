@@ -184,9 +184,17 @@ html, body {
     width: 70%;
 }
 
-#page6 { background-image: url("./assets/bg_page6.jpg"); }
+#page6 { background-image: url("./assets/bg_page6.jpg"); justify-content: space-between;}
 
+#page6 #icon {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    ;
+}
 #footer {
+    
     min-height: 30vh;
     width: 100%;
     background-color: #AD9974;
@@ -424,11 +432,12 @@ html, body {
   }
 
   #page4 #heading {
-    font-size: 30px;
+    font-size: 26px;
+max-width: 90%;
   }
 
-  #page4 #subtext {
-    font-size: 24px;
+  #page4 p {
+    font-size: 16px;
   }
 
   #page5 p {
