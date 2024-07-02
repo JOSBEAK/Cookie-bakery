@@ -14,9 +14,13 @@ html, body {
     height: 80px;
     object-fit: contain;
 }
+ 
+.title {
+    padding: 20px;
+}
 
 [id^="page"] {
-    height: 90vh;
+    min-height: 90vh;
     width: 100vw;
 }
 
@@ -62,14 +66,14 @@ html, body {
 }
 
 #page2 #heading, #page4 #heading {
-    max-width: 60%;
+   
     text-align: center;
     font-weight: 100;
     font-family: 'Lucida Sans', sans-serif;
 }
 
-#page2 #heading { font-size: 60px; text-align: center; }
-#page4 #heading { font-size: 50px; text-align: center; }
+#page2 #heading { font-size: 60px; text-align: center; max-width: 60%; }
+#page4 #heading { font-size: 40px; text-align: center; max-width: 70%; }
 
 #page2 img, #page3 #text-section img, #page4 .box img {
     width: 30px;
@@ -81,6 +85,7 @@ html, body {
     background-color: #AD9974;
     display: flex;
     flex-wrap: wrap;
+    height: 90vh;
 }
 
 #page3 #text-section {
@@ -125,7 +130,7 @@ html, body {
     display: flex;
     flex-direction: column;
     max-width: 30%;
-    height: 60vh;
+    min-height: 60vh;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
@@ -182,7 +187,7 @@ html, body {
 #page6 { background-image: url("./assets/bg_page6.jpg"); }
 
 #footer {
-    min-height: 30%;
+    min-height: 30vh;
     width: 100%;
     background-color: #AD9974;
     display: flex;
